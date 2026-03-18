@@ -1,16 +1,50 @@
 {
   "name": "api-insight-sdk",
   "version": "1.0.0",
-  "description": "Node.js SDK for API Insight — API failure monitoring",
+  "description": "Node.js SDK for API Insight — automatic API failure monitoring, root cause analysis, and error grouping for Express, Fastify, NestJS, and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": ["api-monitoring", "error-tracking", "express-middleware"],
-  "license": "MIT",
+  "keywords": [
+    "api-monitoring",
+    "error-tracking",
+    "express-middleware",
+    "error-monitoring",
+    "api-errors",
+    "root-cause-analysis",
+    "error-grouping",
+    "api-insight",
+    "express",
+    "fastify",
+    "nestjs",
+    "nodejs",
+    "observability",
+    "apm",
+    "error-logging"
+  ],
+  "author": "Gopinath Natarajan",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gopinath-natarajan/api-insight.git",
+    "directory": "sdk"
+  },
+  "homepage": "https://github.com/gopinath-natarajan/api-insight#readme",
+  "bugs": {
+    "url": "https://github.com/gopinath-natarajan/api-insight/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "axios": "^1.6.2"
   },
